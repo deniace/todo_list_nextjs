@@ -30,6 +30,32 @@ export default function Todo() {
                 {element1}
             </Layout>
 
+            <section>
+                <div className="w-full max-wxs">
+                    form
+                    <form
+                        action=""
+                        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-6"
+                    >
+                        <div className="mb-4">
+                            <label
+                                htmlFor="username"
+                                className="block text-gray-700 text-sm font-bold mb-2"
+                            >
+                                Username
+                            </label>
+
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                className="shadow appearance-none border rounded w-full "
+                            />
+                        </div>
+                    </form>
+                </div>
+            </section>
+
             <Button text="Link" title="hyper link" type="link" link="#" />
             <Button text="Button" title="button" type="button" link="#" />
 

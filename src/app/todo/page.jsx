@@ -32,13 +32,13 @@ export default function Todo() {
 
             <section>
                 <div className="w-full max-wxs">
-                    form
                     <form
                         action=""
                         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-6"
                     >
-                        <div className="mb-4">
+                        {/* <div className="mb-4">
                             <label
+                                id="labelUsername"
                                 htmlFor="username"
                                 className="block text-gray-700 text-sm font-bold mb-2"
                             >
@@ -49,11 +49,75 @@ export default function Todo() {
                                 type="text"
                                 id="username"
                                 name="username"
-                                className="shadow appearance-none border rounded w-full "
+                                placeholder="Username"
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div> */}
+
+                        <div className="mb-4">
+                            <label
+                                htmlFor="title"
+                                id="labelTitle"
+                                className="block text-gray-700 text-sm font-bold mb-2"
+                            >
+                                Title
+                            </label>
+
+                            <input
+                                type="text"
+                                id="title"
+                                name="title"
+                                placeholder="title"
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
                         </div>
+
+                        <div className="mb-4">
+                            <input
+                                type="checkbox"
+                                className="mr-2 leading-tight"
+                            />
+                            <label
+                                htmlFor="isDone"
+                                className="text-gray-700 text-sm font-bold mb-2"
+                            >
+                                Is Done
+                            </label>
+                        </div>
+
+                        <div className="mb-4">
+                            <label
+                                htmlFor="password"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >
+                                Password
+                            </label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            />
+                        </div>
+
+                        <button
+                            type="submit"
+                            title="save"
+                            className="bg-green-700 hover:bg-green-600 focus:bg-green-800 active:bg-green-900 rounded-sm pt-1 pb-1 pl-3 pr-3 m-1 text-white"
+                        >
+                            Save
+                        </button>
                     </form>
                 </div>
+            </section>
+
+            <section className="bg-gray-200 py-3 px-3 rounded">
+                <form action="" className="rounded">
+                    <input type="text" name="query" />
+                    <button type="submit" className="text-black">
+                        search
+                    </button>
+                </form>
             </section>
 
             <Button text="Link" title="hyper link" type="link" link="#" />

@@ -1,3 +1,4 @@
+"use clinet";
 export function Button(props) {
     // if (props.type == "link") {
     //     return (

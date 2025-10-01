@@ -1,57 +1,36 @@
+import Navbar from "@/components/navbar";
+
 export default function Layout({ children }) {
     return (
-        <html lang="en">
-            <head>
-                <meta charset="UTF-8" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-                <title>Document</title>
-            </head>
-            <body>
-                <div className="">
-                    <ul className="flex">
-                        <i className="mr-6">
-                            <a
-                                href="#"
-                                className="text-blue-300 hover:text-blue-600"
-                            >
-                                Active
-                            </a>
-                        </i>
+        <div>
+            <Navbar />
+            <ul className="flex">
+                <i className="mr-6">
+                    <a href="#" className="text-blue-300 hover:text-blue-600">
+                        Active
+                    </a>
+                </i>
 
-                        <i className="mr-6">
-                            <a
-                                href="#"
-                                className="text-blue-300 hover:text-blue-600"
-                            >
-                                Link
-                            </a>
-                        </i>
+                <i className="mr-6">
+                    <a href="#" className="text-blue-300 hover:text-blue-600">
+                        Link
+                    </a>
+                </i>
 
-                        <i className="mr-6">
-                            <a
-                                href="#"
-                                className="text-blue-300 hover:text-blue-600"
-                            >
-                                link
-                            </a>
-                        </i>
+                <i className="mr-6">
+                    <a href="#" className="text-blue-300 hover:text-blue-600">
+                        link
+                    </a>
+                </i>
 
-                        <i className="mr-6">
-                            <a
-                                href="#"
-                                className="text-gray-300 cursor-not-allowed"
-                            >
-                                Disabled
-                            </a>
-                        </i>
-                    </ul>
+                <i className="mr-6">
+                    <a href="#" className="text-gray-300 cursor-not-allowed">
+                        Disabled
+                    </a>
+                </i>
+            </ul>
 
-                    <div>{children}</div>
-                </div>
-            </body>
-        </html>
+            <div>{children}</div>
+        </div>
     );
 }
